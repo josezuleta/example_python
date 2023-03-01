@@ -61,26 +61,48 @@ else:
 	print('No eligio una de nuestras opciones, por tanto no tiene boleta.')
 """
 #Ejercicio documento.
-
+"""""
 tipo_A= 20000
 tipo_B= 10000
 tipo_diff= 5000
+horas_laborales = 8
 
+sueldo_mensualA= tipo_A * horas_laborales * 30
+sueldo_mensualB = tipo_B * horas_laborales * 30
+sueldo_mensualdiff= tipo_diff * horas_laborales * 30
+horas_extras = (tipo_diff*6/100+tipo_diff)*3
+nuevo_sueldo = sueldo_mensualdiff + horas_extras
 
-sueldo_mensualdiff= tipo_diff * 8 * 30
-
-tipo_proyecto = 3
- 
+tipo_proyecto = 1
 if tipo_proyecto == 1:
    print('Tipo de proyecto es A, por tanto el valor de la hora es 20000$')
+   print ('Su salario mensual da un total de' , sueldo_mensualA)
+   print('Salario mensual es mayor al tope maximo')
 elif tipo_proyecto ==2:
     print('Tipo de proyecto B, por tanto el valor de la hora es 10000$')
+    print('Su salario mensual da un total de', sueldo_mensualB)
+    print ('Salario mensual es mayor al tope maximo')
 else:
-    print('Tipo de proyecto diferente A/B, VALOR HORA 5000')    
+    print('Tipo de proyecto diferente A/B, por tanto el valor de la hora es 5000')
+    print('su sueldo mensual es un total de' , sueldo_mensualdiff)
+    print('Salario mensual es menor al tope, valor horas extras a pagar' , horas_extras)
+    print('Nuevo sueldo mensual = ' , nuevo_sueldo)
+"""
+print('Ingrese el producto que desea publicitar')
+producto = ('')
+producto = input ()
+print ('Has elegido publicitar' , producto , 'buena eleccion')
 
+print ('ingrese el medio por el cual quiere publicitar el producto')
+redes = ('')
+redes = input()
+print('Has elegido publicitar tu', producto, 'en', redes)
+print ("confirme con si y no para repetir el procedimiento")
+confirmacion=("")
+Confirmacion=input("")
+if confirmacion == "si":
+    print("su producto ha sido publicitado con exito ")
+else:
+    print("repita el procedimiento")
 
-
-print("valor sueldo mensual tipo A/B" , sueldo_mensualdiff)
-print('el sueldo es menor al tope, valor horas extras a pagar')
-horas_Extras= sueldo_mensualdiff * 0.06
-print(horas_Extras) 
+    #:)
