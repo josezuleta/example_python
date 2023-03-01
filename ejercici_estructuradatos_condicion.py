@@ -88,6 +88,7 @@ else:
     print('Salario mensual es menor al tope, valor horas extras a pagar' , horas_extras)
     print('Nuevo sueldo mensual = ' , nuevo_sueldo)
 """
+#Actividad diagramas
 print('Ingrese el producto que desea publicitar')
 producto = ('')
 producto = input ()
